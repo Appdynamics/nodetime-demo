@@ -1,0 +1,20 @@
+
+<h2>Nodetime Demo</h3>
+
+<ul>
+  <li>Source code of this demo is available at <a href="https://github.com/nodetime/nodetime-demo">https://github.com/nodetime/nodetime-demo</a></li>
+  <li>Nodetime agent source code is available at <a href="https://github.com/nodetime/nodetime">https://github.com/nodetime/nodetime</a></li>
+  <li>This page is being called regularly to simulate production behavior. <a href="https://nodetime.com/signin">Sign in</a> to Nodetime to see, analize, profile and monitor this app.</li>
+  <li>This is an Express app, which also uses Socket.io, Redis, MongoDB.</li>
+</ul>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost:3000');
+  socket.emit('ping', 'ping-payload');  
+  console.log('ping', 'ping-payload');
+
+  socket.on('pong', function (data) {
+    console.log('pong', data);
+  });
+</script>

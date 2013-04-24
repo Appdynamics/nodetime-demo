@@ -1,0 +1,26 @@
+{   
+  "name" : "nodetime-demo", 
+  "version" : "0.1.1",
+  "description" : "Nodetime Demo",
+  "author": "Nodetime <devops@nodetime.com>", 
+  "homepage": "http://nodetime.com", 
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nodetime/nodetime-demo.git"
+  }, 
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "socket.io": "*",
+    "redis": "*",
+    "mongodb": "*",
+    "async": "*",
+    "request": "*",
+    "nodetime": "*"
+  },
+  "engines": { 
+    "node" : ">=0.8.0" 
+  }, 
+  "licenses": [{
+  }]
+}

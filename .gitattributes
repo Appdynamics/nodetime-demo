@@ -1,0 +1,5 @@
+.gitignore export-ignore
+.git export-ignore
+.npmignore export-ignore
+npm-debug.log export-ignore
+build/ export-ignore
