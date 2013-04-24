@@ -3,7 +3,7 @@
 var request = require('request');
 var async = require('async');
 
-function run(url, duration, rate, callback) {
+exports.run = function(url, duration, rate, callback) {
   var funcs = [];
 
   var duration = duration * 1000;
@@ -29,12 +29,3 @@ function run(url, duration, rate, callback) {
   });
 }
 
-// Simulate constant load
-run('http://demo.nodetime.com/', 60, 1, function(err) {
-  if(err) console.error(err);
-})
-
-// Exit if not finished yet
-setTimeout(function() {
-  process.exit();
-}, 65000)
