@@ -44,6 +44,7 @@ var io = require('socket.io').listen(server);
 
 app.set('view engine', 'ejs');
 app.set('view options', {layout: false});
+app.set('views', __dirname + '/views');
 app.use(app.router);
 app.use(nodetime.expressErrorHandler()); //optional. Error handler to catch errors from middleware chain
 app.use(express.errorHandler());
